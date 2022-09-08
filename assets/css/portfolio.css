@@ -1,0 +1,72 @@
+.portfolio_container {
+  grid-area: portfolio;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.item_cards_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item_card {
+  width: 80%;
+  max-width: 265px;
+  box-shadow: 0 2px 5px var(--shadow-color);
+  border-radius: 7px;
+  padding: 2em 2em;
+  margin: 20px;
+}
+
+.item_name {
+  color: var(--primary-color);
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.item_icon {
+  width: 90%;
+  margin: 10px 0;
+  border-radius: 7px;
+}
+
+.item_rol {
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 90%;
+}
+
+.download_button {
+  color: var(--primary-color);
+  margin: 10px 0;
+  background-color: var(--secundary-color);
+  width: 80%;
+  padding: .5em;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+@media (min-width: 982px) {
+  .item_card {
+    max-width: 300px;
+  }
+
+  .item_name {
+    font-size: 25px;
+  }
+
+  .item_rol {
+    font-size: 16px;
+  }
+}

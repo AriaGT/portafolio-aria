@@ -1,0 +1,211 @@
+/*Configuración Global*/
+
+:root {
+  --theme-color: #fff0ff;
+  --primary-color: #7f4ca5;
+  --secundary-color: #dbb6ee;
+  --text-color-inverse: white;
+  --text-color: black;
+  --shadow-color: #00000040;
+  --menu-mobile-background-color: #4b1c71;
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
+section[id] {
+  scroll-margin-top: 135px;
+}
+
+body {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100%;
+  scroll-behavior: smooth;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.body-container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template:
+  "header         header          header"     100px
+  ".              profile         ."          auto
+  "about          about           about"      auto
+  ".              skills          ."          auto
+  "experience     experience      experience" auto
+  ".              portfolio       ."          auto
+  "contact        contact         contact"    auto
+  "footer         footer          footer"     auto/
+  1fr     minmax(891px, 1080px)   1fr;
+}
+
+.title {
+  color: var(--primary-color);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  grid-area: header;
+  position: sticky;
+  z-index: 10;
+  width: 100%;
+  background-color: var(--theme-color);
+  left: 0;
+  top: 0;
+  transition: all .5s;
+  box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.about_container {
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.experience_container {
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.contact_container {
+  box-shadow: 0 -2px 5px var(--shadow-color);
+}
+
+.footer_container {
+  box-shadow: 0 -2px 5px var(--shadow-color);
+}
+
+.incompatible_screen_resolution {
+  display: none;
+  z-index: 1000;
+  background-color: var(--theme-color);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: calc(7vh);
+  overflow-y: auto;
+}
+
+.horizontal_padding {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.vertical_padding {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/*Para Tablets*/
+
+@media (max-width: 892px) {
+  
+  body {
+    overflow: visible;
+  }
+
+  .body-container {
+    grid-template:
+    "header"     100px
+    "profile"    auto
+    "about"      auto
+    "skills"     auto
+    "experience" auto
+    "portfolio"  auto
+    "contact"    auto
+    "footer"     auto
+  }
+
+  .horizontal_padding {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  
+  .vertical_padding {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+/*Para móbiles*/
+
+@media (max-width: 600px) {
+
+  .body-container {
+    grid-template:
+    "header"     60px
+    "profile"    auto
+    "about"      auto
+    "skills"     auto
+    "experience" auto
+    "portfolio"  auto
+    "contact"    auto
+    "footer"     auto
+  }
+
+  section[id] {
+    scroll-margin-top: 85px;
+  }
+
+  .header {
+    height: 60px;
+  }
+
+  .white_box {
+    top: 53px;
+  }
+
+  .one_side_shadow {
+    height: 8px;
+    top: 50px;
+  }
+
+  .horizontal_padding {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .vertical_padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+
+/*Resolución no soportada*/
+
+@media (max-width: 252px) {
+
+  .body-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  header {
+    display: none;
+  }
+
+  .incompatible_screen_resolution {
+    display: flex;
+  }
+}

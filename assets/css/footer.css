@@ -1,0 +1,19 @@
+.footer_container {
+  grid-area: footer;
+  background-color: var(--primary-color);
+  padding: 10px 0;
+}
+
+.footer_title {
+  color: var(--text-color-inverse);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  text-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.footer_p {
+  margin: 0;
+  color: var(--text-color-inverse);
+}

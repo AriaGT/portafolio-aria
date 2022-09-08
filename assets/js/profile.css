@@ -1,0 +1,32 @@
+.profile {
+  border: 1px solid;
+  margin: 0 20px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.profile_card {
+  border: solid;
+  min-width: 20vw;
+  font-size: min(4vw,20px);
+  font-weight: 700;
+  letter-spacing: -.5px;
+  line-height: 1.2em;
+}
+
+.profile_img_container {
+  max-width: 34%;
+  margin-top: 10vh;
+  background-color: var(--primary-color);
+  display: flex;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  margin-left: auto;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.profile_img {
+  max-height: 80%;
+}

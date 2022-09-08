@@ -1,0 +1,22 @@
+.skills_container {
+  grid-area: skills;
+}
+
+.skills_list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills_skill {
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px var(--shadow-color);
+  border-radius: 42px;
+  padding: .5em .7em;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}

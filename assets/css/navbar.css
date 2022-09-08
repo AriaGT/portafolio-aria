@@ -1,0 +1,238 @@
+/*Contenedor de la Barra*/
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/*Logo*/
+
+.logo {
+  margin: 2px 0;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: var(--text-color-inverse);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: .2s ease-in-out;
+}
+
+.logo_ico {
+  font-size: 40px;
+}
+
+.logo:hover {
+  margin: 0 0;
+}
+
+/*Menú*/
+
+.nav_menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} 
+
+.nav_menu_item {
+  padding: 0 15px;
+  width: max-content;
+  transition: .3s ease-in-out;
+}
+
+.nav_menu_link {
+  padding: 2px 5px;
+  border-radius: 4px;
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 80px;
+  box-sizing: border-box;
+}
+
+.nav_menu_link:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+  transition: 300ms ease-out;
+}
+
+.open_menu,
+.close_menu {
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 42px;
+  display: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.about_me_container {
+  display: none;
+}
+
+.one_side_shadow {
+  display: none;
+}
+
+/*Para Tablets*/
+
+@media (max-width: 892px) {
+
+  .nav_menu_item {
+    display: none;
+  }
+
+  .home_button {
+    display: block;
+  }
+
+  .about_me_container {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    align-items: center;
+  }
+  
+  .open_about_me {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2.7px 5px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .open_about_me:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+    transition: 300ms ease-out;
+  }
+  
+  .about_me_menu {
+    font-size: 24px;
+    list-style: none;
+    flex-direction: column;
+    position: fixed;
+    right: -60%;
+    top: 100px;
+    padding: 8px 0;
+    margin-bottom: 10px;
+    width: 60%;
+    height: calc(100vh - 100px);
+    align-items: center;
+    background-color: var(--menu-mobile-background-color);
+    overflow-y: auto;
+    transition: .3s ease-in-out;
+  }
+  
+  .about_me_item {
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .about_me_menu_link {
+    color: var(--text-color-inverse);
+    line-height: 60px;
+    border-radius: 4px;
+    padding: 2px 20px;
+    transition: .3s ease-in-out;
+  }
+
+  .about_me_menu_link:hover {
+    background-color: var(--theme-color);
+    color: var(--text-color);
+  }
+  
+  .about_me_menu-visible {
+    right: 0;
+  }
+}
+
+/*Para móbiles*/
+
+@media (max-width: 600px) {
+
+  .about_me_container {
+    display: none;
+  } 
+  
+  .nav_menu_item {
+    display: flex;
+  }
+
+  .nav_container {
+    margin: -2px auto;
+  }
+
+  .logo {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: var(--text-color-inverse);
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo_ico {
+    font-size: 24px;
+  }
+
+  /*Menu  Desplegable*/
+  
+  .nav_menu {
+    flex-direction: column;
+    position: fixed;
+    left: 600px;
+    top: 0;
+    padding-top: 8px;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    margin-right: 20px;
+    background-color: var(--menu-mobile-background-color);
+    overflow-y: auto;
+    transition: .3s ease-in-out;
+  }
+
+  .open_menu,
+  .close_menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .close_button {
+    align-self: flex-end;
+    padding: 0 10px
+  }
+
+  .close_menu {
+    color: var(--text-color-inverse);
+  }
+
+  .nav_menu_link {
+    color: var(--text-color-inverse);
+    line-height: 60px;
+    }
+
+  .nav_menu-opened {
+    left: 0;
+  }
+}
