@@ -55,6 +55,8 @@ a {
   font-weight: bold;
   text-align: center;
   text-shadow: 0 2px 5px var(--shadow-color);
+  margin: 0;
+  padding-bottom: 30px;
 }
 
 .container {
@@ -106,13 +108,13 @@ a {
 }
 
 .horizontal_padding {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .vertical_padding {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /*Para Tablets*/

@@ -86,7 +86,7 @@
 
 /*Para Tablets*/
 
-@media (max-width: 892px) {
+@media (max-width: 1022px) {
 
   .nav_menu_item {
     display: none;
@@ -108,7 +108,7 @@
     background: none;
     border: none;
     cursor: pointer;
-    padding: 2.7px 5px;
+    padding: 0px 15px;
     border-radius: 4px;
     font-size: 18px;
     font-weight: 500;

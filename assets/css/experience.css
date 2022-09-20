@@ -3,7 +3,14 @@
   background-color: var(--primary-color);
 }
 
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .experience_title {
+  margin: 0;
   color: var(--text-color-inverse);
   font-size: 30px;
   font-weight: bold;

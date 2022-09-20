@@ -1,7 +1,6 @@
 .contact_container {
   grid-area: contact;
   background-color: var(--primary-color);
-  padding: 10px 0;
 }
 
 .contact_title {
@@ -9,7 +8,6 @@
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  margin: 0;
   text-shadow: 0 2px 5px var(--shadow-color);
 }
 
@@ -17,10 +15,12 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0 20px;
 }
 
 .contact_card {
   background-color: var(--theme-color);
+  box-shadow: 0 2px 5px var(--shadow-color);
   margin: 10px;
   padding: 10px;
   border-radius: 60px;
@@ -30,6 +30,11 @@
   "icon details ." 20px/
   50px  auto    10px;
   align-items: center;
+  transition: .2s ease-in-out;
+}
+
+.contact_card:hover {
+  box-shadow: 0 2px 12px var(--shadow-color);
 }
 
 .contact_icon_container {
@@ -50,6 +55,7 @@
   font-size: 25px;
   font-style: normal;
   padding: 10px;
+  aspect-ratio: 1;
 }
 
 .contact_name {

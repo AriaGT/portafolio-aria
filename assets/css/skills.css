@@ -19,4 +19,9 @@
   margin: 10px;
   display: flex;
   align-items: center;
+  transition: .2s ease-in-out;
+}
+
+.skills_skill:hover {
+  box-shadow: 0 2px 12px var(--shadow-color);
 }

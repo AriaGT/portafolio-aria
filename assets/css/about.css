@@ -3,6 +3,12 @@
   background-color: var(--primary-color);
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .about_title {
   color: var(--text-color-inverse);
   font-size: 30px;
@@ -13,6 +19,7 @@
 }
 
 .about_p {
+  margin: 0;
   text-align: center;
   max-width: 1080px;
   color: var(--text-color-inverse);
