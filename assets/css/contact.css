@@ -5,6 +5,8 @@
 
 .contact_title {
   color: var(--text-color-inverse);
+  margin: 0;
+  padding-bottom: 30px;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
