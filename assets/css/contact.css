@@ -36,27 +36,28 @@
 }
 
 .contact_card:hover {
-  box-shadow: 0 2px 12px var(--shadow-color);
+  filter: brightness(.8);
+  box-shadow: 0 5px 12px var(--shadow-color); 
 }
 
 .contact_icon_container {
+  background-color: var(--secundary-color);
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   grid-area: icon;
   height: 40px;
   width: 40px;
   margin: 0;
 }
 
-.contact_icon {
-  text-align: center;
+.contact_icon_container > i {
+  width: 45px;
+  aspect-ratio: 1;
   color: var(--primary-color);
-  background-color: var(--secundary-color);
-  border-radius: 50%;
   font-size: 25px;
-  font-style: normal;
-  padding: 10px;
+  padding: 20px;
   aspect-ratio: 1;
 }
 

@@ -16,9 +16,15 @@ navMenuLinks.forEach (navMenuLink => {
 openMenuBtn.addEventListener("click", toggleMenu);
 closeMenuBtn.addEventListener("click", toggleMenu);
 
+// ABOUT ME
+
 aboutMeMenu = document.querySelector(".about_me_menu")
 aboutMeBtn = document.querySelector(".open_about_me")
 
 aboutMeBtn.addEventListener("click", () => {
+    aboutMeMenu.classList.toggle("about_me_menu-visible")
+})
+
+aboutMeMenu.addEventListener("mouseleave", () => {
     aboutMeMenu.classList.toggle("about_me_menu-visible")
 })

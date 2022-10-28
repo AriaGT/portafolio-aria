@@ -25,10 +25,10 @@
 }
 
 .experience_card {
+  width: 80%;
   max-width: 300px;
-  display: inline-block;
   text-align: center;
-  background-color: var(--theme-color);
+  background-color: white;
   border-radius: 7px;
   box-shadow: 0 2px 5px var(--shadow-color);
   margin: 10px;

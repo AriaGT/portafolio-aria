@@ -11,6 +11,7 @@
 }
 
 .skills_skill {
+  background-color: white;
   font-size: 20px;
   font-weight: 500;
   box-shadow: 0 2px 5px var(--shadow-color);
@@ -20,6 +21,10 @@
   display: flex;
   align-items: center;
   transition: .2s ease-in-out;
+}
+
+.skills_skill .fa-react {
+  font-weight: bold;
 }
 
 .skills_skill:hover {
