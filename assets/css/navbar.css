@@ -34,10 +34,10 @@
   font-size: 40px;
 }
 .logo:hover {
-  transform: scale(1.04);
+  transform: translateY(-50%) scale(1.04);
 }
 .logo:active {
-  transform: scale(.96);
+  transform: translateY(-50%) scale(.96);
 }
 
 /*Menú*/
@@ -49,7 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 5px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -166,19 +166,11 @@
   .nav_menu_item {
     display: flex;
   }
-  .nav_container {
-    margin: -2px auto;
-  }
   .logo {
-    background-color: var(--primary-color);
-    border-radius: 8px;
-    color: var(--text-color-inverse);
     font-size: 14px;
     font-weight: bold;
     line-height: 15px;
     padding: 0 10px;
-    display: flex;
-    align-items: center;
     gap: 10px;
   }
   .logo_ico {
@@ -190,13 +182,13 @@
   .nav_menu {
     flex-direction: column;
     position: fixed;
-    left: -600px;
+    left: -700px;
     bottom: 0;
     padding-top: 8px;
     width: 100vw;
     height: 100vh;
     align-items: center;
-    margin-right: 20px;
+    margin: 0;
     background-color: var(--menu-mobile-background-color);
     overflow-y: auto;
     transition: 0.3s ease-in-out;
@@ -223,7 +215,7 @@
   }
   .close_menu {
     color: var(--text-color-inverse);
-    top: 30px;
+    top: 35px;
     right: 20px;
   }
   .nav_menu_link {
