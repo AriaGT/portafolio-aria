@@ -24,6 +24,14 @@
   padding: 2em 2em;
   margin: 20px;
   background-color: white;
+  transition: box-shadow .2s ease;
+  transition: transform .2s ease;
+}
+.item_card:hover {
+  box-shadow: 0 2px 12px var(--shadow-color);
+  transition: box-shadow .2s ease;
+  transform: scale(1.02);
+  transition: transform .2s ease;
 }
 
 .item_name {

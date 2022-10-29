@@ -1,8 +1,11 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Aria</title>
+    <link rel="shortcut icon" href="#">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
@@ -149,12 +152,12 @@
       <section class="skills" id="skills">
         <h1 class="skills_title title">Mis habilidades</h1>
         <ul class="skills_list">
-          <li class="skills_skill"><i class="fa-brands fa-square-js"></i>&nbsp;JavaScript</li>
-          <li class="skills_skill"><i class="fa-brands fa-square-js"></i>&nbsp;HTML</li>
-          <li class="skills_skill"><i class="fa-brands fa-css3-alt"></i>&nbsp;CSS</li>
-          <li class="skills_skill"><i class="fa-brands fa-react"></i>&nbsp;React</li>
-          <li class="skills_skill"><img class="fa-solid" src="assets/img/ps.svg">&nbsp;Photoshop</li>
-          <li class="skills_skill"><i class="fa-solid fa-palette"></i>&nbsp;MS Paint</li>
+          <li class="skills_skill"><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"><i class="fa-brands fa-square-js"></i>&nbsp;JavaScript</li></a>
+          <li  class="skills_skill"><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"><i class="fa-brands fa-square-js"></i>&nbsp;HTML</li></a>
+          <li class="skills_skill"><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"><i class="fa-brands fa-css3-alt"></i>&nbsp;CSS</li></a>
+          <li class="skills_skill"><a href="https://es.reactjs.org/" target="_blank"><i class="fa-brands fa-react"></i>&nbsp;React</li></a>
+          <li class="skills_skill"><a href="https://www.adobe.com/pe/products/photoshop.html" target="_blank"><img class="fa-solid" src="assets/img/ps.svg">&nbsp;Photoshop</li></a>
+          <li class="skills_skill"><a href="https://jspaint.app" target="_blank"><i class="fa-solid fa-palette"></i>&nbsp;MS Paint</li></a>
         </ul>
       </section>
     </div>
@@ -188,16 +191,52 @@
       <section class="portfolio" id="portfolio">
         <h2 class="portfolio_title title">Portafolio</h2>
         <div class="item_cards_container">
-
+          
           <div class="item_card">
-            <h2 class="item_name">Pre-Curso Academlo</h2>
-            <img class="item_icon" src="assets/img/academlo_img.webp" alt="" srcset="">
+            <h2 class="item_name">E-Commerce Redux</h2>
+            <img class="item_icon" src="assets/img/ecommerce.webp" alt="" srcset="">
             <div class="download_info">
-              <h3 class="item_rol">Algunos Apuntes de lo aprendido en el curso Previo al inicio en Academlo en PDF.</h3>
-              <a href="./assets/resources/precurso-academlo.pdf" class="download_button fa-solid fa-download" download="Precurso Academlo" title="Descargar Documento"></a>
+              <h3 class="item_rol">Proyecto amplio en React utilizando CRUD, Redux y otras librerias para crear un lindo e-commerce</h3>
+              <a href="https://aria-ecommerce-redux.netlify.app/" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
             </div>
           </div>
-  
+
+          <div class="item_card">
+            <h2 class="item_name">Users CRUD </h2>
+            <img class="item_icon" src="assets/img/user.webp" alt="" srcset="">
+            <div class="download_info">
+              <h3 class="item_rol">Proyecto con el manejo de CRUD (Manejo de datos con una BBDD) en React.</h3>
+              <a href="https://arias-users-crud.netlify.app/" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
+            </div>
+          </div>
+
+          <div class="item_card">
+            <h2 class="item_name">Weather Widget </h2>
+            <img class="item_icon" src="assets/img/weather.webp" alt="" srcset="">
+            <div class="download_info">
+              <h3 class="item_rol">Proyecto con el uso de axios para obtener datos de una API (peticiones asincronas) en React.</h3>
+              <a href="https://arias-weather-widget.netlify.app" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
+            </div>
+          </div>
+
+          <div class="item_card">
+            <h2 class="item_name">Random Quotes</h2>
+            <img class="item_icon" src="assets/img/rqfy.webp" alt="" srcset="">
+            <div class="download_info">
+              <h3 class="item_rol">Proyecto de aplicación de useState de React (Subido a Netlify).</h3>
+              <a href="https://random-quotes-for-you.netlify.app" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
+            </div>
+          </div>
+          
+          <div class="item_card">
+            <h2 class="item_name">E-Commerce Básico</h2>
+            <img class="item_icon" src="assets/img/e-commerce.webp" alt="" srcset="">
+            <div class="download_info">
+              <h3 class="item_rol">Proyecto de E-commerce utilizando lógica JavaScript (Subido a Netlify).</h3>
+              <a href="https://infoshop-aria.netlify.app/" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
+            </div>
+          </div>
+
           <div class="item_card">
             <h2 class="item_name">Ejercicios Replit</h2>
             <img class="item_icon" src="assets/img/replit_img.webp" alt="" srcset="">
@@ -207,21 +246,13 @@
             </div>
           </div>
   
+          
           <div class="item_card">
-            <h2 class="item_name">E-Commerce Básico</h2>
-            <img class="item_icon" src="assets/img/e-commerce.webp" alt="" srcset="">
+            <h2 class="item_name">Pre-Curso Academlo</h2>
+            <img class="item_icon" src="assets/img/academlo_img.webp" alt="" srcset="">
             <div class="download_info">
-              <h3 class="item_rol">Proyecto de E-commerce utilizando lógica JavaScript (Subido a Netlify).</h3>
-              <a href="https://infoshop-aria.netlify.app/" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
-            </div>
-          </div>
-  
-          <div class="item_card">
-            <h2 class="item_name">Random Quotes</h2>
-            <img class="item_icon" src="assets/img/rqfy.webp" alt="" srcset="">
-            <div class="download_info">
-              <h3 class="item_rol">Proyecto de aplicación de useState de React (Subido a Netlify).</h3>
-              <a href="https://random-quotes-for-you.netlify.app" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
+              <h3 class="item_rol">Algunos Apuntes de lo aprendido en el curso Previo al inicio en Academlo en PDF.</h3>
+              <a href="./assets/resources/precurso-academlo.pdf" class="download_button fa-solid fa-download" download="Precurso Academlo" title="Descargar Documento"></a>
             </div>
           </div>
 

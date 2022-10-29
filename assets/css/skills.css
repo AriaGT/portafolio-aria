@@ -22,11 +22,11 @@
   align-items: center;
   transition: .2s ease-in-out;
 }
-
 .skills_skill .fa-react {
   font-weight: bold;
 }
-
 .skills_skill:hover {
   box-shadow: 0 2px 12px var(--shadow-color);
+  filter: brightness(.8);
+  cursor: pointer;
 }
