@@ -200,6 +200,9 @@
     overflow-y: auto;
     transition: 0.3s ease-in-out;
   }
+  .nav_menu_item strong {
+    color: white;
+  }
   .nav_menu-opened {
     left: 0;
   }
