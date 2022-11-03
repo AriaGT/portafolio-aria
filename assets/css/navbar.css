@@ -5,6 +5,7 @@
   max-width: 1080px;
   margin: 0 auto;
   position: relative;
+  top: 0;
 }
 
 /*Logo*/
@@ -183,7 +184,7 @@
     flex-direction: column;
     position: fixed;
     left: -700px;
-    bottom: 0;
+    top: 50%;
     padding-top: 8px;
     width: 100vw;
     height: 100vh;
