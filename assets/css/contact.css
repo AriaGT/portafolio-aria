@@ -2,17 +2,27 @@
   grid-area: contact;
   background-color: var(--primary-color);
 }
-
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
 .contact_title {
   color: var(--text-color-inverse);
   margin: 0;
-  padding-bottom: 30px;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
   text-shadow: 0 2px 5px var(--shadow-color);
 }
-
+.contact_p {
+  margin: 0;
+  text-align: center;
+  max-width: 1080px;
+  color: var(--text-color-inverse);
+  font-weight: bold;
+}
 .contact_cards_container {
   display: flex;
   justify-content: center;

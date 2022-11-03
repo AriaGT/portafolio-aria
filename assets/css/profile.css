@@ -75,17 +75,39 @@
   background-color: var(--primary-color);
   color: var(--text-color-inverse);
   border: none;
-  font-size: 20px;
-  padding: 0.5em 1em;
+  font-size: 18px;
+  padding: 10px 20px;
+  width: 165px;
   border-radius: 7px;
   cursor: pointer;
   transition: .2s ease-in-out;
   box-shadow: 0 2px 5px var(--shadow-color);
+  margin: 5px;
 }
 .discover:hover {
   transform: scale(1.04);
 }
 .discover:active {
+  transform: scale(.96);
+}
+.contactme {
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  width: 165px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  box-shadow: 0 2px 5px var(--shadow-color);
+  margin: 5px;
+}
+.contactme:hover {
+  transform: scale(1.04);
+}
+.contactme:active {
   transform: scale(.96);
 }
 
@@ -141,6 +163,11 @@
   }
 
   .discover {
-    font-size: 24px;
+    font-size: 22px;
+    width: 190px;
+  }
+  .contactme {
+    font-size: 22px;
+    width: 190px;
   }
 }

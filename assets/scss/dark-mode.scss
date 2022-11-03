@@ -60,13 +60,10 @@ body {
         button {
           color: $light;
         }
-        .nav_menu {
-          background-color: $dark-purple;
-        }
-        .nav_menu > .nav_menu_item > .nav_menu_link {
+        .nav_menu .nav_menu_item .nav_menu_link {
           color: $light;
         }
-        .nav_menu > .nav_menu_item > .nav_menu_link:hover {
+        .nav_menu .nav_menu_item .nav_menu_link:hover {
           color: $dark-purple;
           background-color: $light;
         }
@@ -81,6 +78,11 @@ body {
           li > ul {
             background-color: $dark-purple;
           }
+        }
+      }
+      @media (max-width: 600px) {
+        .nav_container .nav_menu {
+          background-color: $dark-purple;
         }
       }
     }
@@ -112,6 +114,9 @@ body {
           }
         } 
       }
+    }
+    .form_modal {
+      background-color: $dark-purple;
     }
     .about_container {
       background-color: $dark-purple;

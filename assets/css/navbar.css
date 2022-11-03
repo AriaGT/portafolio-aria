@@ -2,6 +2,7 @@
 
 .nav_container {
   height: 100%;
+  width: 100%;
   max-width: 1080px;
   margin: 0 auto;
   position: relative;
@@ -55,6 +56,9 @@
   margin: 0;
   padding: 0;
 }
+.nav_menu_item strong {
+  color: var(--primary-color);
+}
 .nav_menu_link {
   padding: 10px 15px;
   border-radius: 4px;
@@ -94,6 +98,7 @@
   }
   .home_button {
     display: block;
+    background-color: none;
   }
   .about_me_container {
     position: absolute;
@@ -184,7 +189,8 @@
     flex-direction: column;
     position: fixed;
     left: -700px;
-    top: 50%;
+    top: 0;
+    transform: translateY(0) translateX(0);
     padding-top: 8px;
     width: 100vw;
     height: 100vh;
@@ -195,7 +201,7 @@
     transition: 0.3s ease-in-out;
   }
   .nav_menu-opened {
-    left: 50vw;
+    left: 0;
   }
   .open_menu,
   .close_menu {
