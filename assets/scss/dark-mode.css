@@ -56,6 +56,9 @@ body.dark .header .nav_container .logo {
 body.dark .header .nav_container button {
   color: var(--theme-color);
 }
+body.dark .header .nav_container .nav_menu {
+  background-color: #2c003a;
+}
 body.dark .header .nav_container .nav_menu > .nav_menu_item > .nav_menu_link {
   color: var(--theme-color);
 }

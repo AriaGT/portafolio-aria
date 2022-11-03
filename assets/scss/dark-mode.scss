@@ -60,6 +60,9 @@ body {
         button {
           color: $light;
         }
+        .nav_menu {
+          background-color: $dark-purple;
+        }
         .nav_menu > .nav_menu_item > .nav_menu_link {
           color: $light;
         }
