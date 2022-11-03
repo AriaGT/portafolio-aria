@@ -7,7 +7,7 @@ function toggleMenu() {
     navMenu.classList.toggle("nav_menu-opened");
 }
 
-navMenuLinks.forEach (navMenuLink => {
+navMenuLinks.forEach(navMenuLink => {
     navMenuLink.addEventListener("click", function() {
         navMenu.classList.remove("nav_menu-opened");
     })
@@ -20,11 +20,14 @@ closeMenuBtn.addEventListener("click", toggleMenu);
 
 aboutMeMenu = document.querySelector(".about_me_menu")
 aboutMeBtn = document.querySelector(".open_about_me")
+aboutMeLinks = document.querySelectorAll(".about_me_menu li a[href^='#']")
 
 aboutMeBtn.addEventListener("click", () => {
     aboutMeMenu.classList.toggle("about_me_menu-visible")
 })
 
-aboutMeMenu.addEventListener("mouseleave", () => {
-    aboutMeMenu.classList.toggle("about_me_menu-visible")
+aboutMeLinks.forEach(navMenuLink => {
+    navMenuLink.addEventListener("click", () => {
+        aboutMeMenu.classList.toggle("about_me_menu-visible")
+    })
 })

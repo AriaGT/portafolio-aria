@@ -127,10 +127,10 @@
     position: fixed;
     right: -700px;
     top: 70px;
-    padding: 8px 0;
+    padding: 15px 0;
     margin-bottom: 10px;
     width: 60vw;
-    height: calc(100vh - 100px);
+    height: 100vh;
     align-items: center;
     background-color: var(--menu-mobile-background-color);
     overflow-y: auto;
