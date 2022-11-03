@@ -57,6 +57,9 @@ body {
           background-color: $light;
           color: $dark-purple ;
         }
+        button {
+          color: $light;
+        }
         .nav_menu > .nav_menu_item > .nav_menu_link {
           color: $light;
         }
@@ -91,7 +94,8 @@ body {
             background-color: $dark-purple;
           }
           button {
-            background-color: $dark-purple;
+            background-color: $light;
+            color: $dark-purple;
             box-shadow: inset 0 0 0 1px $border;
           }
         }
