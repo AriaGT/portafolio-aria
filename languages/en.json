@@ -1,0 +1,67 @@
+{
+  "navbar": {
+    "logo": "Aria Portfolio",
+    "aboutme": "About me",
+    "skills": "Abilities",
+    "experience": "Experience",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "profile": {
+    "title": "Hi, I'm Aria",
+    "occupation-lineOne": "Front End Web Developer",
+    "occupation-lineTwo": "ReactJS Specialist",
+    "hobbie": "I am passionate about the digital world and design to serve users.",
+    "download-cv": "Download CV",
+    "contactme": "Contact me"
+  },
+  "form": {
+    "name": "Name",
+    "message": "Message",
+    "submit": "Submit"
+  },
+  "about": {
+    "title": "About me",
+    "about": "Hello, my name is Alessandro Fernandez Medrano, but you know me as Aria, I'm 18 years old and I'm from Moyobamba - Peru, I'm studying Web development at Academlo so that in the future I'll work in the field with recognized companies and form a good profile as Web Dev."
+  },
+  "skills": {
+    "title": "My skills"
+  },
+  "experience": {
+    "title": "Experience",
+    "careerOne": "Career: Business Administration <br>  ",
+    "timeOne": "2021 - In progress",
+    "careerTwo": "Full Stack Web Development and Computer Science",
+    "timeTwo": "2022 - In progress"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "pyoyect_one_title": "Virtual Store",
+    "pyoyect_one_description": "Browse products by prices or categories, log in, add them to your cart and see your purchase history!",
+    "pyoyect_two_title": "Pokédex",
+    "pyoyect_two_description": "Explore hundreds of pokémons, filter them by type, see their advanced details with just one Click!",
+    "pyoyect_three_title": "Users CRUD",
+    "pyoyect_three_description": "Create user cards by entering their data, delete them and edit them as you like!",
+    "pyoyect_four_title": "Weather Widget",
+    "pyoyect_four_description": "Check the weather in your area with this nice App! Don't forget to give Location permission.",
+    "pyoyect_five_title": "Random Quotes",
+    "pyoyect_five_description": "Tap the button and you will be shown a completely random famous phrase!",
+    "pyoyect_six_title": "Basic Store",
+    "pyoyect_six_description": "Choose some products, add them to the cart and buy them, but first check if there is any Stock left!",
+    "pyoyect_seven_title": "Replit Exercises",
+    "pyoyect_seven_description": "Solved JavaScript exercises from the Replit Platform (.js format open with VS Code or similar).",
+    "pyoyect_eight_title": "Pre-Academic Course",
+    "pyoyect_eight_description": "Notes of what was learned in the Pre-start course in Academlo in PDF."
+  },
+  "contact": {
+    "title": "Contact me",
+    "pre_form": "I'm ready to start working for you! Write me an email or by any of the following means!",
+    "form_name": "Name",
+    "form_message": "Message",
+    "form_submit": "Submit",
+    "phone": "Phone"
+  },
+  "footer": {
+    "made" : "Made with &nbsp;<i class='fa-solid fa-heart'></i>&nbsp; at Academlo"
+  }
+}

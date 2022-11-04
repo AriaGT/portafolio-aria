@@ -47,6 +47,9 @@ $border: hsl(0, 0%, 18.82%);
 
 body {
   transition: all .8s ease;
+  .container {
+    transition: background-color .8s ease;
+  }
   &.dark {
     background-color: #14001a;
     .header {
@@ -58,6 +61,9 @@ body {
           color: $dark-purple ;
         }
         button {
+          color: $light;
+        }
+        .nav_menu .nav_menu_item strong {
           color: $light;
         }
         .nav_menu .nav_menu_item .nav_menu_link {
@@ -103,6 +109,9 @@ body {
             color: $dark-purple;
             box-shadow: inset 0 0 0 1px $border;
           }
+          .buttons {
+            background: none;
+          }
         }
         .profile_img_container {
           .profile_img {
@@ -140,6 +149,16 @@ body {
     .contact_container {
       background-color: $dark-purple;
       box-shadow: inset 0 1px 0 0 $border;
+    }
+    .language_icon {
+      background-color: $light;
+      color: $dark-purple;
+    }
+    .flags {
+      background-color: $light;
+      .flags_item {
+        background-color: $dark-purple;
+      }
     }
     .switch {
       color: $dark-purple;

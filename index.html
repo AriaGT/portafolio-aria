@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assets/scss/languages.css">
     <link rel="stylesheet" href="assets/scss/dark-mode.css">
     <link rel="stylesheet" href="assets/scss/modal.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -25,6 +26,7 @@
     <script defer="" src="assets/js/scroll.js"></script>
     <script defer="" src="assets/js/dark-mode.js"></script>
     <script defer="" src="assets/js/modal.js"></script>
+    <script defer="" src="assets/js/language.js"></script>
     <script src="https://kit.fontawesome.com/36084cf3ee.js" crossorigin="anonymous"></script>
   </head>
 
@@ -37,9 +39,8 @@
         <a class="logo" href="#">
           <i class="logo_ico fa-solid fa-graduation-cap"></i>
   
-          <div>
-            Aria <br>
-            Portafolio
+          <div data-section="navbar" data-value="logo">
+            Aria Portafolio
           </div>
         </a>
   
@@ -60,20 +61,20 @@
           </li>
   
           <li class="nav_menu_item">
-            <a href="#about" class="nav_menu_link nav_link">Sobre mí</a>
+            <a href="#about" class="nav_menu_link nav_link" data-section="navbar" data-value="aboutme">Sobre mí</a>
           </li>
   
           <li class="nav_menu_item">
-            <a href="#skills" class="nav_menu_link nav_link">Mis habilidades</a>
+            <a href="#skills" class="nav_menu_link nav_link" data-section="navbar" data-value="skills">Habilidades</a>
           </li>
           <li class="nav_menu_item">
-            <a href="#experience" class="nav_menu_link nav_link">Experiencia</a>
+            <a href="#experience" class="nav_menu_link nav_link" data-section="navbar" data-value="experience">Experiencia</a>
           </li>
           <li class="nav_menu_item">
-            <a href="#portfolio" class="nav_menu_link nav_link">Portafolio</a>
+            <a href="#portfolio" class="nav_menu_link nav_link" data-section="navbar" data-value="portfolio">Portafolio</a>
           </li>
           <li class="nav_menu_item">
-            <a href="#contact" class="nav_menu_link nav_link"><strong>Contáctame</strong></a>
+            <a href="#contact" class="nav_menu_link nav_link"><strong data-section="navbar" data-value="contact">Contáctame</strong></a>
           </li>
   
         </ul>
@@ -81,7 +82,7 @@
         <ul class="about_me_container container ">
   
         
-          <button class="open_about_me">
+          <button class="open_about_me" data-section="navbar" data-value="aboutme">
             Acerca de mí
           </button>
   
@@ -95,20 +96,20 @@
               </li>
   
               <li class="about_me_item">
-                <a href="#about" class="about_me_menu_link nav_link">Sobre mí</a>
+                <a href="#about" class="about_me_menu_link nav_link" data-section="navbar" data-value="aboutme">Sobre mí</a>
               </li>
   
               <li class="about_me_item">
-                <a href="#skills" class="about_me_menu_link nav_link">Mis habilidades</a>
+                <a href="#skills" class="about_me_menu_link nav_link" data-section="navbar" data-value="skills">Habilidades</a>
               </li>
               <li class="about_me_item">
-                <a href="#experience" class="about_me_menu_link nav_link">Experiencia</a>
+                <a href="#experience" class="about_me_menu_link nav_link" data-section="navbar" data-value="experience">Experiencia</a>
               </li>
               <li class="about_me_item">
-                <a href="#portfolio" class="about_me_menu_link nav_link">Portafolio</a>
+                <a href="#portfolio" class="about_me_menu_link nav_link" data-section="navbar" data-value="portfolio">Portafolio</a>
               </li>
               <li class="about_me_item">
-                <a href="#contact" class="about_me_menu_link nav_link"><strong>Contacto</strong></a>
+                <a href="#contact" class="about_me_menu_link nav_link"><strong data-section="navbar" data-value="contact">Contacto</strong></a>
               </li>
             </ul>
             
@@ -124,19 +125,23 @@
     <div class="profile_container container horizontal_padding vertical_padding">
       <section class="profile">
         <div class="profile_card">
-          <h1 class="profile_title">
+          <h1 class="profile_title" data-section="profile" data-value="title">
             Hola, soy Aria
           </h1>
-          <p class="profile_card_presentation">
-            Desarrollador Web FrontEnd <br>
-            Especialista en <italic>ReactJS</italic>
+          <p class="profile_card_presentation" data-section="profile" data-value="occupation-lineOne">
+            Desarrollador Web FrontEnd
+          </p>
+          <p class="profile_card_presentation" data-section="profile" data-value="occupation-lineTwo">
+            Especialista en ReactJS
           </p>
           <div class="profile_card_line"></div>
-          <p class="profile_card_hobbie">
+          <p class="profile_card_hobbie" data-section="profile" data-value="hobbie">
             Me apasiona el mundo digital y el diseño para servir a los usuarios.
           </p>
-          <a href="./assets/resources/cv.docx" download="CV - ALESSANDRO"><button class="discover" ">Descargar CV</button></a>
-          <button class="contactme" ">Contáctame</button>
+          <div class="buttons">
+            <a href="./assets/resources/cv.docx" download="CV - ALESSANDRO"><button class="discover" data-section="profile" data-value="download-cv">Descargar CV</button></a>
+            <button class="contactme" data-section="profile" data-value="contactme">Contáctame</button>
+          </div>
         </div>
         <div class="profile_img_container">
           <img class="profile_img" src="assets/img/aria_img.webp" alt="developer">
@@ -148,20 +153,20 @@
     <div class="form_container">
       <form class="form_modal" action="https://formsubmit.co/ariagt191000@gmail.com" method="POST">
         <div class="modal_closeBtn">x</div>
-        <label for="name">Nombre</label>
-        <input placeholder="Nombre" type="text" name="name" required>
-        <label for="email">E-mail</label>
-        <input placeholder="tucorreo@email.com" type="email" name="email" required>
-        <label for="message">Mensaje</label>
-        <textarea name="message" id="message" cols="30" rows="5" placeholder="Me gustó tu portafolio, Quisiera saber más!"></textarea>
-        <button class="button_submit" type="submit">Enviar</button>
+        <label for="name" data-section="form" data-value="name">Nombre</label>
+        <input type="text" name="name" required>
+        <label for="email" data-section="form" data-value="email">E-mail</label>
+        <input type="email" name="email" required>
+        <label for="message" data-section="form" data-value="message">Mensaje</label>
+        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+        <button class="button_submit" type="submit" data-section="form" data-value="submit">Enviar</button>
       </form>
     </div>
   
     <div class="about_container container horizontal_padding vertical_padding">
       <section class="about" id="about">
-        <h1 class="about_title">Sobre mí</h1>
-        <p class="about_p">
+        <h1 class="about_title" data-section="about" data-value="title">Sobre mí</h1>
+        <p class="about_p" data-section="about" data-value="about">
           Hola, mi nombre es Alessandro Fernandez Medrano, pero me conocen como Aria, tengo 18 años y soy de Moyobamba - Perú, estudio desarrollo Web en Academlo para en un futuro trabajar en el campo con empresas reconocidas y formar un buen perfil como Web Dev.
         </p>
       </section>
@@ -169,7 +174,7 @@
   
     <div class="skills_container container horizontal_padding vertical_padding">
       <section class="skills" id="skills">
-        <h1 class="skills_title title">Mis habilidades</h1>
+        <h1 class="skills_title title" data-section="skills" data-value="title">Mis habilidades</h1>
         <ul class="skills_list">
           <li class="skills_skill"><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"><i class="fa-brands fa-square-js"></i>&nbsp;JavaScript</li></a>
           <li  class="skills_skill"><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"><i class="fa-brands fa-square-js"></i>&nbsp;HTML</li></a>
@@ -183,23 +188,23 @@
   
     <div class="experience_container container horizontal_padding vertical_padding">
       <section class="experience" id="experience">
-        <h2 class="experience_title">Experiencia</h2>
+        <h2 class="experience_title" data-section="experience" data-value="title">Experiencia</h2>
         <div class="experience_cards_container">
           <div class="experience_card">
             <h2 class="experience_name">UCV</h2>
             <div class="experience_icon_container">
               <img class="experience_icon" src="assets/img/ucv_icon.webp" crossorigin="anonymous">
             </div>
-            <h3 class="experience_rol">Carrera: Administración de Empresas</h3>
-            <h3 class="experience_time">2021 - En Curso</h3>
+            <h3 class="experience_rol" data-section="experience" data-value="careerOne">Carrera: Administración de Empresas</h3>
+            <h3 class="experience_time" data-section="experience" data-value="timeOne">2021 - En Curso</h3>
           </div>
           <div class="experience_card">
             <h2 class="experience_name">Academlo</h2>
             <div class="experience_icon_container">
               <img class="experience_icon" src="assets/img/academlo_icon.webp" crossorigin="anonymous">
             </div>
-            <h3 class="experience_rol">Estudiante de Desarrollo Web Full Stack</h3>
-            <h3 class="experience_time">2022 - En Curso</h3>
+            <h3 class="experience_rol" data-section="experience" data-value="careerTwo">Desarrollo Web Full Stack y Ciencias de la Computación</h3>
+            <h3 class="experience_time" data-section="experience" data-value="timeTwo">2022 - En Curso</h3>
           </div>
         </div>
         </section></div>
@@ -208,78 +213,78 @@
   
     <div class="portfolio_container container horizontal_padding vertical_padding">
       <section class="portfolio" id="portfolio">
-        <h2 class="portfolio_title title">Portafolio</h2>
+        <h2 class="portfolio_title title" data-section="portfolio" data-value="title">Portafolio</h2>
         <div class="item_cards_container">
           
           <div class="item_card">
-            <h2 class="item_name">E-Commerce Redux</h2>
+            <h2 class="item_name" data-section="portfolio" data-value="pyoyect_one_title">Tienda Virtual</h2>
             <img class="item_icon" src="assets/img/ecommerce.webp" alt="" srcset="">
             <div class="download_info">
-              <h3 class="item_rol">Proyecto amplio en React utilizando CRUD, Redux y otras librerias para crear un lindo e-commerce</h3>
+              <h3 class="item_rol" data-section="portfolio" data-value="pyoyect_one_description">Explora productos por precios o categorías, inicia sesión, añadelos a tú carrito y mira tu historial de compras!</h3>
               <a href="https://aria-ecommerce-redux.netlify.app/" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
             </div>
           </div>
 
           <div class="item_card">
-            <h2 class="item_name">Pokedex</h2>
+            <h2 class="item_name" data-section="portfolio" data-value="pyoyect_two_title">Pokédex</h2>
             <img class="item_icon" src="assets/img/pokedex.webp" alt="" srcset="">
             <div class="download_info">
-              <h3 class="item_rol">Proyecto trabajando con una API simulando una pokedex y el uso de varios filtros para mostrar la información</h3>
+              <h3 class="item_rol" data-section="portfolio" data-value="pyoyect_two_description">Explora cientos de pokémons, filtralos por su tipo, mira sus detalles avanzados con solo un Click!</h3>
               <a href="https://arias-pokedex.netlify.app" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
             </div>
           </div>
 
           <div class="item_card">
-            <h2 class="item_name">Users CRUD </h2>
+            <h2 class="item_name" data-section="portfolio" data-value="pyoyect_three_title">Users CRUD</h2>
             <img class="item_icon" src="assets/img/user.webp" alt="" srcset="">
             <div class="download_info">
-              <h3 class="item_rol">Proyecto con el manejo de CRUD (Manejo de datos con una BBDD) en React.</h3>
+              <h3 class="item_rol" data-section="portfolio" data-value="pyoyect_three_description">Crea tarjetas de usuarios ingresando sus datos, eliminalos y editalos como gustes!</h3>
               <a href="https://arias-users-crud.netlify.app/" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
             </div>
           </div>
 
           <div class="item_card">
-            <h2 class="item_name">Weather Widget </h2>
+            <h2 class="item_name" data-section="portfolio" data-value="pyoyect_four_title">Weather Widget</h2>
             <img class="item_icon" src="assets/img/weather.webp" alt="" srcset="">
             <div class="download_info">
-              <h3 class="item_rol">Proyecto con el uso de axios para obtener datos de una API (peticiones asincronas) en React.</h3>
+              <h3 class="item_rol" data-section="portfolio" data-value="pyoyect_four_description">Mira el clima en tu localidad con esta bonita App! No olvides dar permiso de Ubicación.</h3>
               <a href="https://arias-weather-widget.netlify.app" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
             </div>
           </div>
 
           <div class="item_card">
-            <h2 class="item_name">Random Quotes</h2>
+            <h2 class="item_name" data-section="portfolio" data-value="pyoyect_five_title">Random Quotes</h2>
             <img class="item_icon" src="assets/img/rqfy.webp" alt="" srcset="">
             <div class="download_info">
-              <h3 class="item_rol">Proyecto de aplicación de useState de React (Subido a Netlify).</h3>
+              <h3 class="item_rol" data-section="portfolio" data-value="pyoyect_five_description">Toca el botón y se te mostrará una frase celebre totalmente aleatoria!</h3>
               <a href="https://random-quotes-for-you.netlify.app" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
             </div>
           </div>
           
           <div class="item_card">
-            <h2 class="item_name">E-Commerce Básico</h2>
+            <h2 class="item_name" data-section="portfolio" data-value="pyoyect_six_title">Tienda básica</h2>
             <img class="item_icon" src="assets/img/e-commerce.webp" alt="" srcset="">
             <div class="download_info">
-              <h3 class="item_rol">Proyecto de E-commerce utilizando lógica JavaScript (Subido a Netlify).</h3>
+              <h3 class="item_rol" data-section="portfolio" data-value="pyoyect_six_description">Elige algunos productos, añadelos al carrito y compralos, pero antes fijate si queda Stock!</h3>
               <a href="https://infoshop-aria.netlify.app/" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
             </div>
           </div>
 
           <div class="item_card">
-            <h2 class="item_name">Ejercicios Replit</h2>
+            <h2 class="item_name" data-section="portfolio" data-value="pyoyect_seven_title">Ejercicios Replit</h2>
             <img class="item_icon" src="assets/img/replit_img.webp" alt="" srcset="">
             <div class="download_info">
-              <h3 class="item_rol">Ejercicios de JavaScript resueltos de la Plataforma Replit (Formato .js abrir con VS Code o similar).</h3>
+              <h3 class="item_rol" data-section="portfolio" data-value="pyoyect_seven_description">Ejercicios de JavaScript resueltos de la Plataforma Replit (Formato .js abrir con VS Code o similar).</h3>
               <a href="./assets/resources/ejercicios-replit-JavaScript.js" class="download_button fa-solid fa-download" download="Ejercicios Replit" title="Descargar Documento"></a>
             </div>
           </div>
   
           
           <div class="item_card">
-            <h2 class="item_name">Pre-Curso Academlo</h2>
+            <h2 class="item_name" data-section="portfolio" data-value="pyoyect_eight_title">Pre-Curso Academlo</h2>
             <img class="item_icon" src="assets/img/academlo_img.webp" alt="" srcset="">
             <div class="download_info">
-              <h3 class="item_rol">Algunos Apuntes de lo aprendido en el curso Previo al inicio en Academlo en PDF.</h3>
+              <h3 class="item_rol" data-section="portfolio" data-value="pyoyect_eight_description">Apuntes de lo aprendido en el curso Previo al inicio en Academlo en PDF.</h3>
               <a href="./assets/resources/precurso-academlo.pdf" class="download_button fa-solid fa-download" download="Precurso Academlo" title="Descargar Documento"></a>
             </div>
           </div>
@@ -291,22 +296,22 @@
   
     <div class="contact_container container horizontal_padding vertical_padding">
       <section class="contact" id="contact">
-        <h2 class="contact_title">Contáctame</h2>
-        <p class="contact_p">Estoy listo para empezar a trabajar para tí! Escribeme un correo o por alguno de los siguientes medios!</p>
+        <h2 class="contact_title" data-section="contact" data-value="title">Contáctame</h2>
+        <p class="contact_p" data-section="contact" data-value="pre_form">Estoy listo para empezar a trabajar para tí! Escribeme un correo o por alguno de los siguientes medios!</p>
         <form class="contact_form" action="https://formsubmit.co/ariagt191000@gmail.com" method="POST">
           <div class="inputs">
-            <label for="name">Nombre</label>
-            <input placeholder="Nombre" type="text" name="name" required>
-            <label for="email">E-mail</label>
-            <input placeholder="tucorreo@email.com" type="email" name="email" required>
+            <label for="name" data-section="contact" data-value="form_name">Nombre</label>
+            <input type="text" name="name" required>
+            <label for="email" >E-mail</label>
+            <input type="email" name="email" required>
           </div>
-          <label for="message">Mensaje</label>
-          <textarea name="message" id="message" cols="30" rows="5" placeholder="Me gustó tu portafolio, Quisiera saber más!"></textarea>
-          <button class="button_submit" type="submit">Enviar</button>
+          <label for="message" data-section="contact" data-value="form_message">Mensaje</label>
+          <textarea name="message" id="message" cols="30" rows="5"></textarea>
+          <button class="button_submit" type="submit" data-section="contact" data-value="form_submit">Enviar</button>
         </form> 
         <div class="contact_cards_container">
           <div class="contact_card">
-            <h2 class="contact_name">Teléfono</h2>
+            <h2 class="contact_name" data-section="contact" data-value="phone">Teléfono</h2>
             <div class="contact_icon_container">
               <i class="fa-solid fa-phone"></i>
             </div>
@@ -336,6 +341,21 @@
         </div>
         </section></div>
       
+    <ul class="language_list">
+      <li class="language_icon">
+        <i class="fa-solid fa-globe"></i>
+      </li>
+      <li class="languages">
+        <ul id="flags" class="flags">
+          <li class="flags_item" data-language="es">
+            <img src="languages/icons/es.svg" alt="es" data-language="es">
+          </li>
+          <li class="flags_item" data-language="en">
+            <img src="languages/icons/en.svg" alt="en" data-language="en">
+          </li>
+        </ul>
+      </li>
+    </ul>
 
     <button class="switch" id="switch">
       <i class="fa-solid fa-sun"></i>
@@ -346,7 +366,7 @@
     <div class="footer_container container">
       <section class="footer">
         <h1 class="footer_title title">Aria - 2022</h1>
-        <p class="footer_p">
+        <p class="footer_p" data-section="footer" data-value="made">
           Hecho con &nbsp;<i class="fa-solid fa-heart"></i>&nbsp; en Academlo
         </p>
       </section>
@@ -357,7 +377,5 @@
       de Pantalla <br>
       Incompatible
     </div>
-  
-  
   
   </body>
