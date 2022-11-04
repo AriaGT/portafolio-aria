@@ -26,6 +26,10 @@
 .experience_card {
   width: 80%;
   max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   background-color: white;
   border-radius: 7px;
@@ -43,11 +47,21 @@
 }
 .experience_name {
   color: var(--primary-color);
-  margin: 0
+  margin: 0;
+  font-size: 18px;
 }
 
 .experience_time {
   color: var(--primary-color);
+}
+
+.experience_rol {
+  font-size: 14px;
+  margin: 0;
+}
+
+.experience_time {
+  font-size: 12px;
 }
 
 @media (min-width: 982px) {
@@ -80,16 +94,19 @@
   }
 
   .experience_name {
+    font-size: 24px;
     grid-area: name;
     margin: 0;
   }
 
   .experience_rol {
+    font-size: initial;
     grid-area: rol;
     margin: 0;
   }
 
   .experience_time {
+    font-size: initial;
     grid-area: time;
     margin: 0;
   }

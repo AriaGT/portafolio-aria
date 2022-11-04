@@ -196,7 +196,7 @@ a {
 
 /*Resolución no soportada*/
 
-@media (max-width: 252px) {
+@media (max-width: 320px) {
 
   .body-container {
     display: flex;
@@ -210,5 +210,6 @@ a {
 
   .incompatible_screen_resolution {
     display: flex;
+    font-size: 1rem;
   }
 }
