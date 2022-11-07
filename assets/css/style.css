@@ -30,6 +30,16 @@ body {
   color: var(--text-color);
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+  background: var(--theme-color);
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--secundary-color);
+  border-radius: 4px;
+  border: 1px solid var(--theme-color);
+}
+
 a {
   color: var(--text-color);
   text-decoration: none;
@@ -154,6 +164,7 @@ a {
 @media (max-width: 600px) {
 
   .body-container {
+    transition: none;
     grid-template:
     "header"     60px
     "profile"    auto
@@ -162,7 +173,8 @@ a {
     "experience" auto
     "portfolio"  auto
     "contact"    auto
-    "footer"     auto
+    "footer"     auto /
+    100vw;
   }
 
   section[id] {

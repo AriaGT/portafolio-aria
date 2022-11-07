@@ -5,6 +5,10 @@ $light: var(--theme-color);
 $shadow: 0 2px 8px #88888875;
 $border: hsl(0, 0%, 18.82%);
 
+.language_list {
+  margin: 0;
+}
+
 .language_icon {
   cursor: pointer;
   box-shadow: -1px 2px 8px #333;
