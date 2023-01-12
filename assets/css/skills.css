@@ -16,15 +16,24 @@
   font-weight: 500;
   box-shadow: 0 2px 5px var(--shadow-color);
   border-radius: 42px;
-  padding: .5em .7em;
+  padding: .5em 1em;
   margin: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
   transition: .2s ease-in-out;
 }
 .skills_skill .fa-react {
   font-weight: bold;
 }
+.skills_skill > a {
+  display: flex;
+  align-items: center;
+}
+.skills_skill a img {
+  width: 25px;
+  aspect-ratio: 1;
+} 
 .skills_skill:hover {
   box-shadow: 0 2px 12px var(--shadow-color);
   filter: brightness(.8);

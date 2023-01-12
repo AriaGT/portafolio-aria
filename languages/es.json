@@ -9,8 +9,8 @@
   },
   "profile": {
     "title": "Hola, soy Aria",
-    "occupation-lineOne": "Desarrollador Web FrontEnd",
-    "occupation-lineTwo": "Especialista en ReactJS",
+    "occupation-lineOne": "Desarrollador Web - Full Stack",
+    "occupation-lineTwo": "PERN Stack - 19 años, San Martín, Perú",
     "hobbie": "Me apasiona el mundo digital y el diseño para servir a los usuarios.",
     "download-cv": "Descargar CV",
     "contactme": "Contáctame"
@@ -36,8 +36,10 @@
   },
   "portfolio": {
     "title": "Portafolio",
-    "pyoyect_one_title": "Tienda Virtual",
-    "pyoyect_one_description": "Explora productos por precios o categorías, inicia sesión, añadelos a tú carrito y mira tu historial de compras!",
+    "api_red_social-title": "API Red Social",
+    "api_red_social-description": "API que puede ser utilizada como base para proyectos escalables de redes sociales, con documentación en Swagger.",
+    "pyoyect_one_title": "Arias Chat App",
+    "pyoyect_one_description": "Crea una cuenta, busca usuarios, inicia conversaciones y habla con todos ellos dentro de esta aplicación.",
     "pyoyect_two_title": "Pokédex",
     "pyoyect_two_description": "Explora cientos de pokémons, filtralos por su tipo, mira sus detalles avanzados con solo un Click!",
     "pyoyect_three_title": "Users CRUD",
@@ -46,12 +48,8 @@
     "pyoyect_four_description": "Mira el clima en tu localidad con esta bonita App! No olvides dar permiso de Ubicación.",
     "pyoyect_five_title": "Random Quotes",
     "pyoyect_five_description": "Toca el botón y se te mostrará una frase celebre totalmente aleatoria!",
-    "pyoyect_six_title": "Tienda básica",
-    "pyoyect_six_description": "Elige algunos productos, añadelos al carrito y compralos, pero antes fijate si queda Stock!",
     "pyoyect_seven_title": "Ejercicios Replit",
-    "pyoyect_seven_description": "Ejercicios de JavaScript resueltos de la Plataforma Replit (Formato .js abrir con VS Code o similar).",
-    "pyoyect_eight_title": "Pre-Curso Academlo",
-    "pyoyect_eight_description": "Apuntes de lo aprendido en el curso Previo al inicio en Academlo en PDF."
+    "pyoyect_seven_description": "Ejercicios de JavaScript resueltos de la Plataforma Replit (Formato .js abrir con VS Code o similar)."
   },
   "contact": {
     "title": "Contáctame",

@@ -9,9 +9,9 @@
   },
   "profile": {
     "title": "Hi, I'm Aria",
-    "occupation-lineOne": "Front End Web Developer",
-    "occupation-lineTwo": "ReactJS Specialist",
-    "hobbie": "I am passionate about the digital world and design to serve users.",
+    "occupation-lineOne": "Full Stack - Web Developer",
+    "occupation-lineTwo": "PERN Stack - 19 years old, San Martín, Perú",
+    "hobbie": "I'm passionate about the digital world and design to serve users.",
     "download-cv": "Download CV",
     "contactme": "Contact me"
   },
@@ -36,8 +36,10 @@
   },
   "portfolio": {
     "title": "Portfolio",
-    "pyoyect_one_title": "Virtual Store",
-    "pyoyect_one_description": "Browse products by prices or categories, log in, add them to your cart and see your purchase history!",
+    "api_red_social-title": "API Social Network",
+    "api_red_social-description": "API that can be used as a foundation for scalable social media projects, with documentation in Swagger.",
+    "pyoyect_one_title": "Arias Chat App",
+    "pyoyect_one_description": "Create an account, search for users, start conversations and talk to all of them within this application.",
     "pyoyect_two_title": "Pokédex",
     "pyoyect_two_description": "Explore hundreds of pokémons, filter them by type, see their advanced details with just one Click!",
     "pyoyect_three_title": "Users CRUD",
@@ -46,12 +48,8 @@
     "pyoyect_four_description": "Check the weather in your area with this nice App! Don't forget to give Location permission.",
     "pyoyect_five_title": "Random Quotes",
     "pyoyect_five_description": "Tap the button and you will be shown a completely random famous phrase!",
-    "pyoyect_six_title": "Basic Store",
-    "pyoyect_six_description": "Choose some products, add them to the cart and buy them, but first check if there is any Stock left!",
     "pyoyect_seven_title": "Replit Exercises",
-    "pyoyect_seven_description": "Solved JavaScript exercises from the Replit Platform (.js format open with VS Code or similar).",
-    "pyoyect_eight_title": "Pre-Academic Course",
-    "pyoyect_eight_description": "Notes of what was learned in the Pre-start course in Academlo in PDF."
+    "pyoyect_seven_description": "Solved JavaScript exercises from the Replit Platform (.js format open with VS Code or similar)."
   },
   "contact": {
     "title": "Contact me",

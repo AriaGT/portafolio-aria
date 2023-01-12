@@ -129,17 +129,17 @@
             Hola, soy Aria
           </h1>
           <p class="profile_card_presentation" data-section="profile" data-value="occupation-lineOne">
-            Desarrollador Web FrontEnd
+            Desarrollador Web - Full Stack
           </p>
           <p class="profile_card_presentation" data-section="profile" data-value="occupation-lineTwo">
-            Especialista en ReactJS
+            PERN Stack - 19 años, San Martín, Perú
           </p>
           <div class="profile_card_line"></div>
           <p class="profile_card_hobbie" data-section="profile" data-value="hobbie">
             Me apasiona el mundo digital y el diseño para servir a los usuarios.
           </p>
           <div class="buttons">
-            <a href="./assets/resources/cv.docx" download="CV - ALESSANDRO"><button class="discover" data-section="profile" data-value="download-cv">Descargar CV</button></a>
+            <a href="./assets/resources/CV-ALESSANDRO.pdf" download="CV - ALESSANDRO"><button class="discover" data-section="profile" data-value="download-cv">Descargar CV</button></a>
             <button class="contactme" data-section="profile" data-value="contactme">Contáctame</button>
           </div>
         </div>
@@ -155,7 +155,7 @@
         <div class="modal_closeBtn">x</div>
         <label for="name" data-section="form" data-value="name">Nombre</label>
         <input type="text" name="name" required>
-        <label for="email" data-section="form" data-value="email">E-mail</label>
+        <label for="email">E-mail</label>
         <input type="email" name="email" required>
         <label for="message" data-section="form" data-value="message">Mensaje</label>
         <textarea name="message" id="message" cols="30" rows="5"></textarea>
@@ -176,12 +176,56 @@
       <section class="skills" id="skills">
         <h1 class="skills_title title" data-section="skills" data-value="title">Mis habilidades</h1>
         <ul class="skills_list">
-          <li class="skills_skill"><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"><i class="fa-brands fa-square-js"></i>&nbsp;JavaScript</li></a>
-          <li  class="skills_skill"><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"><i class="fa-brands fa-square-js"></i>&nbsp;HTML</li></a>
-          <li class="skills_skill"><a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"><i class="fa-brands fa-css3-alt"></i>&nbsp;CSS</li></a>
-          <li class="skills_skill"><a href="https://es.reactjs.org/" target="_blank"><i class="fa-brands fa-react"></i>&nbsp;React</li></a>
-          <li class="skills_skill"><a href="https://www.adobe.com/pe/products/photoshop.html" target="_blank"><img class="fa-solid" src="assets/img/ps.svg">&nbsp;Photoshop</li></a>
-          <li class="skills_skill"><a href="https://jspaint.app" target="_blank"><i class="fa-solid fa-palette"></i>&nbsp;MS Paint</li></a>
+          <li class="skills_skill">
+            <a href="https://www.postgresql.org/" target="_blank">
+              <img class="fa-solid" src="assets/img/postgresql.svg">&nbsp;PostgreSQL
+            </a>
+          </li>
+          <li class="skills_skill">
+            <a href="https://expressjs.com/" target="_blank">
+              <span style="color: white; background-color: black; font-size: 14px; height: 20px; line-height: 19px; padding: 0 2px; border-radius: 4px;">ex</span>&nbsp;Express.js
+            </a>
+          </li>
+          <li class="skills_skill">
+            <a href="https://es.reactjs.org/" target="_blank">
+              <i class="fa-brands fa-react"></i>&nbsp;React.js
+            </a>
+          </li>
+          <li class="skills_skill">
+            <a href="https://es.reactjs.org/" target="_blank">
+              <i class="fa-brands fa-node"></i></i>&nbsp;Node.js
+            </a>
+          </li>
+          <li class="skills_skill">
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+              <i class="fa-brands fa-square-js"></i>&nbsp;JavaScript
+            </a>
+          </li>
+          <li  class="skills_skill">
+            <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
+              <i class="fa-brands fa-html5"></i>&nbsp;HTML
+            </a>
+          </li>
+          <li class="skills_skill">
+            <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
+              <i class="fa-brands fa-css3-alt"></i>&nbsp;CSS
+            </a>
+          </li>
+          <li class="skills_skill">
+            <a href="https://www.adobe.com/pe/products/xd.html" target="_blank">
+              <img class="fa-solid" src="assets/img/xd.svg">&nbsp;Adobe Xd
+            </a>
+          </li>
+          <li class="skills_skill">
+            <a href="https://www.adobe.com/pe/products/photoshop.html" target="_blank">
+              <img class="fa-solid" src="assets/img/ps.svg">&nbsp;Adobe Photoshop
+            </a>
+          </li>
+          <li class="skills_skill">
+            <a href="https://jspaint.app" target="_blank">
+              <i class="fa-solid fa-palette"></i>&nbsp;MS Paint
+            </a>
+          </li>
         </ul>
       </section>
     </div>
@@ -208,8 +252,6 @@
           </div>
         </div>
         </section></div>
-      
-    
   
     <div class="portfolio_container container horizontal_padding vertical_padding">
       <section class="portfolio" id="portfolio">
@@ -217,11 +259,20 @@
         <div class="item_cards_container">
           
           <div class="item_card">
-            <h2 class="item_name" data-section="portfolio" data-value="pyoyect_one_title">Tienda Virtual</h2>
+            <h2 class="item_name" data-section="portfolio" data-value="api_red_social-title">API - Red Social</h2>
+            <img class="item_icon" src="assets/img/api_social_network.webp" alt="" srcset="">
+            <div class="download_info">
+              <h3 class="item_rol" data-section="portfolio" data-value="api_red_social-description">API que puede ser utilizada como base para proyectos escalables de redes sociales, con documentación en Swagger.</h3>
+              <a href="https://api-red-social.onrender.com/api/v1/docs/" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
+            </div>
+          </div>
+          
+          <div class="item_card">
+            <h2 class="item_name" data-section="portfolio" data-value="pyoyect_one_title">Arias Chat App</h2>
             <img class="item_icon" src="assets/img/ecommerce.webp" alt="" srcset="">
             <div class="download_info">
-              <h3 class="item_rol" data-section="portfolio" data-value="pyoyect_one_description">Explora productos por precios o categorías, inicia sesión, añadelos a tú carrito y mira tu historial de compras!</h3>
-              <a href="https://aria-ecommerce-redux.netlify.app/" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
+              <h3 class="item_rol" data-section="portfolio" data-value="pyoyect_one_description">Crea una cuenta, busca usuarios, inicia conversaciones y habla con todos ellos dentro de esta aplicación.</h3>
+              <a href="https://arias-chat-app.netlify.app/" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
             </div>
           </div>
 
@@ -260,15 +311,6 @@
               <a href="https://random-quotes-for-you.netlify.app" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
             </div>
           </div>
-          
-          <div class="item_card">
-            <h2 class="item_name" data-section="portfolio" data-value="pyoyect_six_title">Tienda básica</h2>
-            <img class="item_icon" src="assets/img/e-commerce.webp" alt="" srcset="">
-            <div class="download_info">
-              <h3 class="item_rol" data-section="portfolio" data-value="pyoyect_six_description">Elige algunos productos, añadelos al carrito y compralos, pero antes fijate si queda Stock!</h3>
-              <a href="https://infoshop-aria.netlify.app/" target="_blank" class="download_button fa-solid fa-arrow-up-right-from-square" title="Visitar página"></a>
-            </div>
-          </div>
 
           <div class="item_card">
             <h2 class="item_name" data-section="portfolio" data-value="pyoyect_seven_title">Ejercicios Replit</h2>
@@ -276,16 +318,6 @@
             <div class="download_info">
               <h3 class="item_rol" data-section="portfolio" data-value="pyoyect_seven_description">Ejercicios de JavaScript resueltos de la Plataforma Replit (Formato .js abrir con VS Code o similar).</h3>
               <a href="./assets/resources/ejercicios-replit-JavaScript.js" class="download_button fa-solid fa-download" download="Ejercicios Replit" title="Descargar Documento"></a>
-            </div>
-          </div>
-  
-          
-          <div class="item_card">
-            <h2 class="item_name" data-section="portfolio" data-value="pyoyect_eight_title">Pre-Curso Academlo</h2>
-            <img class="item_icon" src="assets/img/academlo_img.webp" alt="" srcset="">
-            <div class="download_info">
-              <h3 class="item_rol" data-section="portfolio" data-value="pyoyect_eight_description">Apuntes de lo aprendido en el curso Previo al inicio en Academlo en PDF.</h3>
-              <a href="./assets/resources/precurso-academlo.pdf" class="download_button fa-solid fa-download" download="Precurso Academlo" title="Descargar Documento"></a>
             </div>
           </div>
 
@@ -296,7 +328,7 @@
   
     <div class="contact_container container horizontal_padding vertical_padding">
       <section class="contact" id="contact">
-        <h2 class="contact_title" data-section="contact" data-value="title">Contáctame</h2>
+        <h2 class="contact_title" data-section="contact" data-value="title">Contáctame!</h2>
         <p class="contact_p" data-section="contact" data-value="pre_form">Estoy listo para empezar a trabajar para tí! Escribeme un correo o por alguno de los siguientes medios!</p>
         <form class="contact_form" action="https://formsubmit.co/ariagt191000@gmail.com" method="POST">
           <div class="inputs">
