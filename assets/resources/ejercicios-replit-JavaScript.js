@@ -263,10 +263,10 @@ function countNumbers(number) {
 
 function reverseText (text) {
   let characters = text.split('')
-  characters.sort((a, b) => {
-    return -1;
-  });
-  return characters
+  characters.sort((a, b) => -1);
+  let reversedText = ''
+  characters.forEach(character => reversedText = reversedText + character)
+  return reversedText
 }
 
 //2 Sumar los números de 2 Arrays
