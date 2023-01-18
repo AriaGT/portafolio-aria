@@ -3,7 +3,7 @@
     "logo": "Aria Portfolio",
     "aboutme": "About me",
     "skills": "Abilities",
-    "experience": "Experience",
+    "experience": "Education",
     "portfolio": "Portfolio",
     "contact": "Contact"
   },
@@ -28,11 +28,11 @@
     "title": "My skills"
   },
   "experience": {
-    "title": "Experience",
+    "title": "Education",
     "careerOne": "Career: Business administration, faculty of Administrative Sciences",
     "timeOne": "2021 - In progress",
     "careerTwo": "Full Stack Web Development and Computer Science",
-    "timeTwo": "2022 - In progress"
+    "timeTwo": "2022 - 2023 (Finished)"
   },
   "portfolio": {
     "title": "Portfolio",

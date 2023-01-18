@@ -3,7 +3,7 @@
     "logo": "Aria Portafolio",
     "aboutme": "Sobre mí",
     "skills": "Habilidades",
-    "experience": "Experiencia",
+    "experience": "Educación",
     "portfolio": "Portafolio",
     "contact": "Contáctame"
   },
@@ -28,11 +28,11 @@
     "title": "Mis habilidades"
   },
   "experience": {
-    "title": "Experiencia",
+    "title": "Educación",
     "careerOne": "Carrera: Administración de Empresas",
     "timeOne": "2021 - En Curso",
     "careerTwo": "Desarrollo Web Full Stack y Ciencias de la Computación",
-    "timeTwo": "2022 - En Curso"
+    "timeTwo": "2022 - 2023 (Finalizado)"
   },
   "portfolio": {
     "title": "Portafolio",
